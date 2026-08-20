@@ -11,16 +11,16 @@
 </head>
 
 <body>
-  <header style="position: sticky; top: 0; z-index: 20; padding: 0; background: var(--gray); color: var(--white);">
-    <div class="wrap" style="width: min(100% - 2rem, 90rem); min-height: 4.5rem; display: flex; align-items: center; gap: 2rem;">
-      <a href="index.html" aria-label="返回首页" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; white-space: nowrap;">
-        <img src="assets/img/badge.png" alt="北京二中校徽" style="width: 2.8rem; height: 2.8rem; object-fit: contain;">
-        <span class="brand-name" style="color: var(--yellow); font-weight: 700; line-height: 1.25;">
-          北京二中国际部<small style="display: block; color: var(--white); font-size: 0.6rem; font-weight: 500;">Beijing No.2 Middle School<br>International Division</small>
+  <header class="site-head">
+    <div class="site-bar">
+      <a class="site-brand" href="index.html" aria-label="返回首页">
+        <img src="assets/img/badge.png" alt="北京二中校徽">
+        <span>
+          北京二中国际部<small>Beijing No.2 Middle School<br>International Division</small>
         </span>
       </a>
 
-      <nav class="links" aria-label="主导航" style="margin-left: auto;">
+      <nav class="links" aria-label="主导航">
         <a class="is-on" href="index.html">首页</a>
         <a href="School/index.html">校内</a>
         <a href="OffCampus/index.html">校外</a>
@@ -28,21 +28,14 @@
         <a href="Community/index.html">交流</a>
       </nav>
 
-      <nav class="tools" aria-label="辅助导航" style="padding-left: 1.4rem; border-left: 1px solid rgba(255, 255, 255, 0.35);">
-        <a href="Tools/index.html">工具</a>
-        <a href="#guide">食用说明</a>
-      </nav>
-
-      <details class="menu" style="margin-left: auto; position: relative;">
-        <summary style="cursor: pointer; list-style: none;">☰</summary>
-        <nav class="menu-list" aria-label="移动端导航" style="position: absolute; top: 2.4rem; right: 0; min-width: 11rem; display: grid; padding: 0.75rem; background: var(--gray); border: 1px solid rgba(255, 255, 255, 0.35);">
+      <details class="menu">
+        <summary>☰</summary>
+        <nav class="menu-list" aria-label="移动端导航">
           <a href="index.html">首页</a>
           <a href="School/index.html">校内</a>
           <a href="OffCampus/index.html">校外</a>
           <a href="Planning/index.html">规划</a>
           <a href="Community/index.html">交流</a>
-          <a href="Tools/index.html">工具</a>
-          <a href="#guide">食用说明</a>
         </nav>
       </details>
     </div>
@@ -190,24 +183,22 @@
     </div>
   </main>
 
-  <footer style="margin: 0; padding-block: 3rem 2rem; background: var(--gray); border: 0; color: var(--white);">
-    <div class="wrap" style="width: min(100% - 3rem, 90rem); display: grid; justify-items: center; gap: 2.25rem;">
-      <a href="index.html" aria-label="返回首页" style="display: flex; align-items: center; gap: 1rem; color: var(--white); text-decoration: none;">
-        <img src="assets/img/badge.png" alt="校徽" style="width: 5rem; height: 5rem; object-fit: contain;">
+  <footer class="site-foot">
+    <div class="foot-in">
+      <a class="foot-brand" href="index.html" aria-label="返回首页">
+        <img src="assets/img/badge.png" alt="校徽">
         <span>
-          <b style="display: block; color: var(--yellow); font-size: 1.35rem;">北京二中国际部</b>
-          <small style="display: block; margin-top: 0.2rem;">Beijing No.2 Middle School<br>International Division</small>
+          <b>北京二中国际部</b>
+          <small>Beijing No.2 Middle School<br>International Division</small>
         </span>
       </a>
 
       <div class="foot-meta">
-        <span>
-          版权所有 © <a href="https://github.com/Tweet-META/">Tweet-META</a>
-        </span>
+        <span>版权所有 © <a href="https://github.com/Tweet-META/">Tweet-META</a></span>
         <span>地址：北京市东城区内务部街15号</span>
         <span>邮编：100010</span>
         <a href="mailto:2441056992@qq.com">反馈意见：2441056992@qq.com</a>
-        <a href="#">网站贡献者</a>
+        <span><a href="#">网站贡献者</a></span>
       </div>
     </div>
   </footer>

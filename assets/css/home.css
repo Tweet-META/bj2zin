@@ -1,58 +1,10 @@
-:root {
-  --gray: #707070;
-  --yellow: #f2c94c;
-  --soft: #f2f2f2;
-  --ink: #333;
-  --white: #fff;
-  --line: #e0e0e0;
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background: var(--white);
-  color: var(--ink);
-}
-
-a {
-  color: inherit;
 }
 
 .wrap {
   width: min(100% - 3rem, 76rem);
   margin-inline: auto;
-}
-
-.links,
-.tools {
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-}
-
-.links a,
-.tools a {
-  padding-block: 1.45rem 1.2rem;
-  border-bottom: 0.25rem solid transparent;
-  text-decoration: none;
-}
-
-.links a:hover,
-.links .is-on,
-.tools a:hover {
-  border-color: var(--yellow);
-  color: var(--yellow);
-}
-
-.menu {
-  display: none;
-}
-
-.menu-list a {
-  padding: 0.7rem 0.8rem;
-  text-decoration: none;
 }
 
 .hero {
@@ -168,6 +120,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.8s ease;
 }
 
 .tile h3 {
@@ -186,9 +139,8 @@ a {
   font-size: 2rem;
 }
 
-.tile:hover {
-  outline: 0.25rem solid var(--yellow);
-  outline-offset: -0.25rem;
+.tile:hover img {
+  transform: scale(1.15);
 }
 
 .feed {
@@ -270,33 +222,7 @@ a {
   color: var(--gray);
 }
 
-.foot-meta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem 1.25rem;
-}
-
-.foot-meta > * {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.foot-meta > * + * {
-  padding-left: 1.25rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 @media (max-width: 900px) {
-  .links,
-  .tools {
-    display: none;
-  }
-
-  .menu {
-    display: block;
-  }
-
   .tiles {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -313,25 +239,11 @@ a {
     min-height: 13rem;
   }
 
-  .foot-meta {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .foot-meta > * + * {
-    padding-left: 0;
-    border-left: 0;
-  }
 }
 
 @media (max-width: 600px), (max-aspect-ratio: 4 / 3) {
   .wrap {
     width: min(100% - 2rem, 76rem);
-  }
-
-  .brand-name {
-    font-size: 0.9rem;
   }
 
   .hero {
@@ -398,14 +310,14 @@ a {
     gap: 0.25rem;
   }
 
-  .foot-meta {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .tile img {
+    transition: none;
   }
 }

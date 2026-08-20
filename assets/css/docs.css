@@ -1,0 +1,157 @@
+.doc {
+  width: min(60%, 48rem);
+  min-height: 70vh;
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.crumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.crumb > * + *::before {
+  content: "/";
+  margin-right: 0.5rem;
+}
+
+.doc-head {
+  margin-bottom: 3rem;
+}
+
+.doc-head h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.25rem, 3vw, 2.5rem);
+  line-height: 1.15;
+}
+
+.doc-section {
+  margin-top: 3rem;
+}
+
+.doc-section h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.doc-links {
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.doc-links a {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fold {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+}
+
+.fold summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+}
+
+.fold summary::-webkit-details-marker {
+  display: none;
+}
+
+.fold summary::before {
+  content: "›";
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.fold[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.fold[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.entries {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.25rem;
+}
+
+.entry {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+}
+
+.entry-grid {
+  display: grid;
+  grid-template-columns: minmax(8rem, 12rem) 1fr;
+  gap: clamp(1.25rem, 4vw, 3rem);
+}
+
+.entry-media {
+  min-height: 10rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  color: var(--gray);
+}
+
+.entry h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.meta {
+  margin: 1.5rem 0 0;
+}
+
+.meta div {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 1rem;
+  padding-block: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.meta dt {
+  color: var(--gray);
+  font-weight: 700;
+}
+
+.meta dd {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .doc {
+    width: calc(100% - 2rem);
+  }
+
+  .entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-media {
+    min-height: 12rem;
+  }
+}
