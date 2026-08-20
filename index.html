@@ -1,22 +1,26 @@
 <!doctype html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="面向北京二中国际部学生的校园信息与经验共建站。">
-  <title>学生共建站｜北京二中国际部</title>
+  <meta name="description" content="北京二中国际部">
+  <title>北京二中国际部</title>
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/home.css">
 </head>
+
 <body>
-  <header class="nav">
-    <div class="wrap nav-in">
-      <a class="brand" href="index.html" aria-label="返回首页">
-        <img class="brand-logo" src="assets/img/badge.png" alt="北京二中校徽">
-        <span class="brand-name">北京二中国际部<small>Beijing No.2 Middle School<br>International Division</small></span>
+  <header style="position: sticky; top: 0; z-index: 20; padding: 0; background: var(--gray); color: var(--white);">
+    <div class="wrap" style="width: min(100% - 2rem, 90rem); min-height: 4.5rem; display: flex; align-items: center; gap: 2rem;">
+      <a href="index.html" aria-label="返回首页" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; white-space: nowrap;">
+        <img src="assets/img/badge.png" alt="北京二中校徽" style="width: 2.8rem; height: 2.8rem; object-fit: contain;">
+        <span class="brand-name" style="color: var(--yellow); font-weight: 700; line-height: 1.25;">
+          北京二中国际部<small style="display: block; color: var(--white); font-size: 0.6rem; font-weight: 500;">Beijing No.2 Middle School<br>International Division</small>
+        </span>
       </a>
 
-      <nav class="links" aria-label="主导航">
+      <nav class="links" aria-label="主导航" style="margin-left: auto;">
         <a class="is-on" href="index.html">首页</a>
         <a href="School/index.html">校内</a>
         <a href="OffCampus/index.html">校外</a>
@@ -24,14 +28,14 @@
         <a href="Community/index.html">交流</a>
       </nav>
 
-      <nav class="tools" aria-label="辅助导航">
+      <nav class="tools" aria-label="辅助导航" style="padding-left: 1.4rem; border-left: 1px solid rgba(255, 255, 255, 0.35);">
         <a href="Tools/index.html">工具</a>
         <a href="#guide">食用说明</a>
       </nav>
 
-      <details class="menu">
-        <summary>☰</summary>
-        <nav class="menu-list" aria-label="移动端导航">
+      <details class="menu" style="margin-left: auto; position: relative;">
+        <summary style="cursor: pointer; list-style: none;">☰</summary>
+        <nav class="menu-list" aria-label="移动端导航" style="position: absolute; top: 2.4rem; right: 0; min-width: 11rem; display: grid; padding: 0.75rem; background: var(--gray); border: 1px solid rgba(255, 255, 255, 0.35);">
           <a href="index.html">首页</a>
           <a href="School/index.html">校内</a>
           <a href="OffCampus/index.html">校外</a>
@@ -44,119 +48,162 @@
     </div>
   </header>
 
-  <main class="home">
+  <main style="padding: 0;">
     <section class="hero" aria-label="校园风景">
-      <img src="assets/img/hero-1.jpg" alt="校园活动场景">
+      <img src="assets/img/hero-1.jpg" alt="校园活动场景" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
     </section>
 
-    <div class="page">
+    <div style="position: relative; z-index: 2; background: var(--soft);">
       <section class="intro">
-      <div class="wrap intro-in">
-        <img class="intro-logo" src="assets/img/badge.png" alt="校徽">
-        <div>
-          <p class="eyebrow">Beijing No.2 Middle School International Division</p>
-          <h1>北京二中国际部</h1>
+        <div class="wrap intro-in">
+          <img src="assets/img/badge.png" alt="校徽" style="width: clamp(9rem, 22vw, 17rem); height: auto;">
+          <div>
+            <p class="eyebrow">Beijing No.2 Middle School International Division</p>
+            <h1>北京二中国际部</h1>
+          </div>
         </div>
-      </div>
       </section>
 
       <section class="section wrap portals" id="portals">
-      <header class="portal-head">
-        <p class="eyebrow">Explore</p>
-        <h2>四大板块</h2>
-      </header>
-      <div class="tiles" aria-label="网站板块">
-        <a class="tile" href="School/index.html">
-          <img src="assets/img/hero-1.jpg" alt="">
-          <span>01</span><h3>校内</h3><p>课程、社团与校园信息</p><b aria-hidden="true">→</b>
-        </a>
-        <a class="tile" href="OffCampus/index.html">
-          <img src="assets/img/hero-2.jpg" alt="">
-          <span>02</span><h3>校外</h3><p>考试、备考与学习资源</p><b aria-hidden="true">→</b>
-        </a>
-        <a class="tile" href="Planning/index.html">
-          <img src="assets/img/hero-3.jpg" alt="">
-          <span>03</span><h3>规划</h3><p>方向、申请与准备路径</p><b aria-hidden="true">→</b>
-        </a>
-        <a class="tile" href="Community/index.html">
-          <img src="assets/img/hero-2.jpg" alt="">
-          <span>04</span><h3>交流</h3><p>经验、问答与学生共建</p><b aria-hidden="true">→</b>
-        </a>
-      </div>
-      </section>
-
-      <section class="section section-soft">
-      <div class="wrap">
-        <header class="head">
-          <div><p class="eyebrow">Campus</p><h2>校园动态</h2></div>
+        <header class="portal-head">
+          <p class="eyebrow">Explore</p>
+          <h2>四大板块</h2>
         </header>
-        <div class="feed">
-          <article class="story">
-            <p class="tag">校园消息</p><h3>动态标题占位</h3>
-            <p>用于展示学校消息或校园生活简讯。</p><a href="#">查看内容 →</a>
-          </article>
-          <article class="story">
-            <p class="tag">官方来源</p><h3>公众号内容索引</h3>
-            <p>保留来源、摘要和跳转原文的位置。</p><a href="#">前往原文 →</a>
-          </article>
-          <article class="story">
-            <p class="tag">近期活动</p><h3>活动标题占位</h3>
-            <p>展示时间、地点与参与方式。</p><a href="#">了解活动 →</a>
-          </article>
+
+        <div class="tiles" aria-label="网站板块">
+          <a class="tile" href="School/index.html">
+            <img src="assets/img/hero-1.jpg" alt="">
+            <h3>校内</h3>
+            <p>课程、社团与校园信息</p>
+            <b aria-hidden="true">→</b>
+          </a>
+
+          <a class="tile" href="OffCampus/index.html">
+            <img src="assets/img/hero-2.jpg" alt="">
+            <h3>校外</h3>
+            <p>考试、备考与学习资源</p>
+            <b aria-hidden="true">→</b>
+          </a>
+
+          <a class="tile" href="Planning/index.html">
+            <img src="assets/img/hero-3.jpg" alt="">
+            <h3>规划</h3>
+            <p>方向、申请与准备路径</p>
+            <b aria-hidden="true">→</b>
+          </a>
+
+          <a class="tile" href="Community/index.html">
+            <img src="assets/img/hero-2.jpg" alt="">
+            <h3>交流</h3>
+            <p>经验、问答与学生共建</p>
+            <b aria-hidden="true">→</b>
+          </a>
         </div>
-      </div>
       </section>
 
-      <section class="section section-soft">
-      <div class="wrap">
+      <section class="section" style="background: var(--soft);">
+        <div class="wrap">
+          <header class="head">
+            <div>
+              <p class="eyebrow">News</p>
+              <h2>校园动态</h2>
+            </div>
+          </header>
+
+          <div class="feed">
+            <article class="story">
+              <p class="tag">2026/7/8</p>
+              <h3>六月戏韵，青春绽放</h3>
+              <p>高二学生以全英文演绎经典剧目《Popcorn》，在数月排练与舞台协作中展现语言表达、戏剧表现和团队合作能力。</p>
+              <a href="https://mp.weixin.qq.com/s/TDvIM78UwCLG2QeT26DN6w">更多 →</a>
+            </article>
+
+            <article class="story">
+              <p class="tag">2026/7/8</p>
+              <h3>舞台逐光，戏韵飞扬</h3>
+              <p>高一学生用全英文演绎《哈姆雷特》《百万英镑》和《雷雨》，在中外经典剧目中展现英语能力与舞台创造力。</p>
+              <a href="https://mp.weixin.qq.com/s/_YihWDbtosfYbfjM-CI8PQ">更多 →</a>
+            </article>
+
+            <article class="story">
+              <p class="tag">2026/7/6</p>
+              <h3>外教相伴，御风掷盘</h3>
+              <p>飞盘社团在外教指导下开展分层训练与实战比赛，同学们在运动中提升技巧，并形成互助传承的社团氛围。</p>
+              <a href="https://mp.weixin.qq.com/s/2TDnSWV20seAFHobsg1L0g">更多 →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <header class="head">
+            <div>
+              <p class="eyebrow">Student Project</p>
+              <h2>学生项目</h2>
+            </div>
+          </header>
+
+          <div class="projects">
+            <article class="project">
+              <img class="project-img" src="assets/img/hero-1.jpg" alt="学生项目占位图">
+              <div class="project-body">
+                <p class="tag">日期</p>
+                <h3>征集项目展示！</h3>
+                <p>项目简介！</p>
+                <a href="#">更多 →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap" id="guide">
         <header class="head">
-          <div><p class="eyebrow">Student Project</p><h2>学生项目</h2></div>
+          <div>
+            <p class="eyebrow">Before You Read</p>
+            <h2>食用说明</h2>
+          </div>
         </header>
-        <div class="feed">
-          <article class="story">
-            <p class="tag">项目展示</p><h3>学生项目占位</h3>
-            <p>展示项目简介、参与方式与最新进展。</p><a href="#">浏览项目 →</a>
-          </article>
-          <article class="story">
-            <p class="tag">正在招募</p><h3>学生项目占位</h3>
-            <p>展示适合加入的学生项目。</p><a href="#">了解项目 →</a>
-          </article>
-          <article class="story">
-            <p class="tag">项目成果</p><h3>学生项目占位</h3>
-            <p>展示由学生完成的成果与记录。</p><a href="#">查看成果 →</a>
-          </article>
-        </div>
-      </div>
-      </section>
 
-      <section class="section wrap guide" id="guide">
-      <header class="head">
-        <div><p class="eyebrow">Before You Read</p><h2>食用说明</h2></div>
-      </header>
-      <div class="guide-grid">
-        <div>
-          <h3>这是一个学生共建站</h3>
-          <p>内容由学生整理和分享，不代表学校立场。涉及课程、考试、招生和活动安排的信息，请以相关官方通知为准。</p>
-        </div>
-        <ul class="notes">
-          <li><b>官方来源</b><span>来自学校或机构公开渠道</span></li>
-          <li><b>学生整理</b><span>根据公开信息重新组织</span></li>
-          <li><b>个人经验</b><span>仅代表贡献者个人经历</span></li>
-        </ul>
-      </div>
-      </section>
+        <div class="guide-grid">
+          <div>
+            <p>说明说明，我是说明</p>
+          </div>
 
+          <ul class="notes" style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line);">
+            <li>
+              <b>我</b>
+              <span>不知道这里写什么</span>
+            </li>
+            <li>
+              <b>但是</b>
+              <span>这里不写东西</span>
+            </li>
+            <li>
+              <b>可能会</b>
+              <span>很丑</span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </main>
 
-  <footer class="foot">
-    <div class="wrap foot-in">
-      <a class="foot-brand" href="index.html" aria-label="返回首页">
-        <img src="assets/img/badge.png" alt="校徽">
-        <span><b>北京二中国际部</b><small>Beijing No.2 Middle School<br>International Division</small></span>
+  <footer style="margin: 0; padding-block: 3rem 2rem; background: var(--gray); border: 0; color: var(--white);">
+    <div class="wrap" style="width: min(100% - 3rem, 90rem); display: grid; justify-items: center; gap: 2.25rem;">
+      <a href="index.html" aria-label="返回首页" style="display: flex; align-items: center; gap: 1rem; color: var(--white); text-decoration: none;">
+        <img src="assets/img/badge.png" alt="校徽" style="width: 5rem; height: 5rem; object-fit: contain;">
+        <span>
+          <b style="display: block; color: var(--yellow); font-size: 1.35rem;">北京二中国际部</b>
+          <small style="display: block; margin-top: 0.2rem;">Beijing No.2 Middle School<br>International Division</small>
+        </span>
       </a>
+
       <div class="foot-meta">
-        <span>版权所有 © 北京市第二中学</span>
+        <span>
+          版权所有 © <a href="https://github.com/Tweet-META/">Tweet-META</a>
+        </span>
         <span>地址：北京市东城区内务部街15号</span>
         <span>邮编：100010</span>
         <a href="mailto:2441056992@qq.com">反馈意见：2441056992@qq.com</a>
@@ -165,4 +212,5 @@
     </div>
   </footer>
 </body>
+
 </html>
