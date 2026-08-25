@@ -39,6 +39,14 @@
   line-height: 1.35;
 }
 
+.tip {
+  margin-block: 1.5rem;
+  padding: 0.4rem 1.25rem;
+  border-left: 0.25rem solid var(--yellow);
+  border-radius: 0 0.35rem 0.35rem 0;
+  background: color-mix(in srgb, var(--yellow) 12%, var(--white));
+}
+
 .doc-links {
   margin: 2rem 0 0;
   padding: 0;
@@ -115,10 +123,26 @@
   color: var(--gray);
 }
 
+.entry-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 .entry h3 {
   margin: 0 0 0.75rem;
   font-size: 1.25rem;
   line-height: 1.6;
+}
+
+.entry-media.entry-photo {
+  min-height: 0;
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .meta {

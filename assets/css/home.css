@@ -204,24 +204,6 @@ html {
   font-weight: 700;
 }
 
-.guide-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 7vw, 6rem);
-}
-
-.notes li {
-  display: grid;
-  grid-template-columns: 7rem 1fr;
-  gap: 1rem;
-  padding-block: 1rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.notes b {
-  color: var(--gray);
-}
-
 @media (max-width: 900px) {
   .tiles {
     grid-template-columns: repeat(2, 1fr);
@@ -273,8 +255,8 @@ html {
   }
 
   .portals,
-  .tiles,
-  .guide-grid {
+  .tiles
+  {
     grid-template-columns: 1fr;
   }
 
@@ -303,11 +285,6 @@ html {
 
   .project-img {
     height: auto;
-  }
-
-  .notes li {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
   }
 
 }
